@@ -1,0 +1,19 @@
+.background {
+    background-color: #FEEEBB;
+    padding: 1rem;
+    text-align: center;
+    position: absolute;
+    width: 100%;
+    height: 300px;
+    bottom: -170px; 
+    display: flex; 
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.lower-component {
+    transition: all 2.0s ease-in-out;
+  }
+  .lower-component a:hover img {
+    transform: scale(1.1);
+}  
