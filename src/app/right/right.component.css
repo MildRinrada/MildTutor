@@ -1,0 +1,70 @@
+.search-btn{
+    align-items: center;
+    appearance: none;
+    background-color: #FFE86F;
+    border-radius: 15px;
+    border-style: none;
+    box-shadow: rgba(0, 0, 0, .2) 0 3px 5px -1px,rgba(0, 0, 0, .14) 0 6px 10px 0,rgba(0, 0, 0, .12) 0 1px 18px 0;
+    box-sizing: border-box;
+    color: #F16F6F;
+    font-family: 'Sukhumvit Set'!important;
+    src: URL('/assets/SukhumvitSet-SemiBold.ttf') format('truetype')!important;
+    cursor: pointer;
+    display: inline-flex;
+    fill: currentcolor;
+    font-size: 18px;
+    font-weight: 500;
+    height: 48px;
+    justify-content: center;
+    letter-spacing: .25px;
+    line-height: normal;
+    max-width: 100%;
+    overflow: visible;
+    padding: 2px 24px;
+    position: relative;
+    text-align: center;
+    text-transform: none;
+    transition: box-shadow 280ms cubic-bezier(.4, 0, .2, 1),opacity 15ms linear 30ms,transform 270ms cubic-bezier(0, 0, .2, 1) 0ms;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    width: auto;
+    will-change: transform,opacity;
+    z-index: 0;
+}
+.search-btn:active {
+    box-shadow: rgba(0, 0, 0, .2) 0 3px 5px -1px, rgba(0, 0, 0, .14) 0 6px 10px 0, rgba(0, 0, 0, .12) 0 1px 18px 0, rgba(0, 0, 0, 0.4) 0px 4px 20px -3px inset;
+  }
+input{
+    box-shadow: rgba(0, 0, 0, .2) 0 3px 5px -1px,rgba(0, 0, 0, .14) 0 6px 10px 0,rgba(0, 0, 0, .12) 0 1px 18px 0;
+}
+.search{
+    border:0;
+    font-size: 16px;
+    width:400px;
+    height: 48px;
+    border-radius: 10px;
+    font-family: 'Sukhumvit Set'!important;
+    src: URL('/assets/SukhumvitSet-SemiBold.ttf') format('truetype')!important;
+    position:absolute; margin-top: -390px; right: 220px;
+    text-indent: 10px;
+}
+
+.button-image1{
+    position:absolute; margin-top: -330px; right: 125px;
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, .2) 0 3px 5px -1px, rgba(0, 0, 0, .14) 0 6px 10px 0, rgba(0, 0, 0, .12) 0 1px 18px 0, rgba(0, 0, 0, 0.4) 0px 4px 20px -3px inset;
+}
+
+.button-image2{
+    position:absolute; margin-top: -190px; right: 400px;
+    border-radius: 25px;
+    box-shadow: rgba(0, 0, 0, .2) 0 3px 5px -1px, rgba(0, 0, 0, .14) 0 6px 10px 0, rgba(0, 0, 0, .12) 0 1px 18px 0, rgba(0, 0, 0, 0.4) 0px 4px 20px -3px inset;
+}
+
+.button-image3{
+    position:absolute; margin-top: -190px; right: 150px;
+    border-radius: 25px;
+    box-shadow: rgba(0, 0, 0, .2) 0 3px 5px -1px, rgba(0, 0, 0, .14) 0 6px 10px 0, rgba(0, 0, 0, .12) 0 1px 18px 0, rgba(0, 0, 0, 0.4) 0px 4px 20px -3px inset;
+}
+
