@@ -1,0 +1,107 @@
+<mat-sidenav-container>
+    <mat-sidenav #sidenav>
+        <a mat-list-item>หน้าหลัก</a>
+        <a mat-list-item>คอร์สเรียน</a>
+        <a mat-list-item>รวมคนเก่ง</a>
+        <a mat-list-item>รู้จักอาจารย์</a>
+        <a mat-list-item>สมัครคอร์สเรียน</a>
+        <a mat-list-item>ลงทะเบียน</a>
+    </mat-sidenav>
+    <mat-sidenav-content>
+        <div class="header">
+            <div>
+                <div class="sidebar" [class.open]="isSidebarOpen">
+                    <hr style="color: transparent">
+                    <div style="display: grid;  grid-template-columns: repeat(2, 1fr);">
+                        <!-- right.component.html -->
+                        <a href="http://localhost:4200/" style="display: inline-block;">
+                            <img src="./assets/Logo MildTutor.png" width="auto" height="40px" alt="MildTutor Logo">
+                        </a>
+                          
+                        <li class="button-register2"><a href="#">เข้าสู่ระบบ</a></li>
+                    </div>
+                    <hr style="color: transparent; border-bottom-color: white; border-width: 2px;">
+                    <br>
+                    <div style="display: grid;  grid-template-columns: repeat(1, 6fr);">
+                        <div></div>
+                        <div class="sidebar_grid_child">
+                            <img src="./assets/home.png" width="auto" height="30px" style="margin-right: 10px;">&nbsp;
+                            <li><a href="#">หน้าหลัก</a></li>
+                        </div>
+                        
+                        <div class="sidebar_grid_child">
+                            <img src="./assets/course.png" width="auto" height="30px" style="margin-right: 10px;">
+                            <li><a href="#">คอร์สเรียน</a></li>
+                        </div>
+                        <div class="sidebar_grid_child">
+                            <img src="./assets/group.png" width="auto" height="30px" style="margin-right: 10px;">
+                            <li><a href="#">รวมคนเก่ง</a></li>
+                        </div>
+                        <div class="sidebar_grid_child">
+                            <img src="./assets/teacher.png" width="auto" height="30px" style="margin-right: 10px;">
+                            <li><a href="#">รู้จักอาจารย์</a></li>
+                        </div>
+                        <div class="sidebar_grid_child">
+                            <img src="./assets/apply.png" width="auto" height="30px" style="margin-right: 10px;">
+                            <li><a href="#">สมัครคอร์สเรียน</a></li>
+                        </div>
+                    </div>
+                    <br>
+                    <hr style="color: transparent; border-bottom-color: white; border-width: 2px;">
+                    <br>
+                    <div style="display: grid;  grid-template-columns: repeat(1, 3fr);">
+                        <div class="sidebar_grid_child">
+                            <img src="./assets/question.png" width="auto" height="30px" style="margin-right: 10px;">
+                            <li><a href="#">คำถามที่พบบ่อย</a></li>
+                        </div>
+                        <div class="sidebar_grid_child">
+                            <img src="./assets/info.png" width="auto" height="30px" style="margin-right: 10px;">
+                            <li><a href="#">นโยบายและเงื่อนไข</a></li>
+                        </div>
+                        <div class="sidebar_grid_child">
+                            <img src="./assets/news.png" width="auto" height="30px" style="margin-right: 10px;">
+                            <li><a href="#">ข่าวประชาสัมพันธ์</a></li>
+                        </div>
+                    </div>
+                    <br>
+                    <hr style="color: transparent; border-bottom-color: white; border-width: 2px;">
+                    <br>
+                    <h1 style="text-align:center;">ติดต่อเรา</h1>
+                    <div style="display: grid;  grid-template-columns: repeat(4, 1fr);">
+                        <a href="#" (mouseover)="changeImage1('./assets/twitter2.png')" (mouseout)="changeImage1('./assets/twitter.png')">
+                            <img [src]="imageSrc1" width="auto" height="50px" style="margin-right: 10px;">
+                        </a>
+                        <a href="#" (mouseover)="changeImage2('./assets/ig2.png')" (mouseout)="changeImage2('./assets/ig.png')">
+                            <img [src]="imageSrc2" width="auto" height="50px" style="margin-right: 10px;">
+                        </a>
+                        <a href="#" (mouseover)="changeImage3('./assets/fb2.png')" (mouseout)="changeImage3('./assets/fb.png')">
+                            <img [src]="imageSrc3" width="auto" height="50px" style="margin-right: 10px;">
+                        </a>
+                        <a href="#" (mouseover)="changeImage4('./assets/youtube2.png')" (mouseout)="changeImage4('./assets/youtube.png')">
+                            <img [src]="imageSrc4" width="auto" height="50px" style="margin-right: 10px;">
+                        </a>
+                    </div>
+                    
+                </div>
+                <button class="hamburger" (click)="toggleMenu()">
+                    <span class="line"></span>
+                    <span class="line"></span>
+                    <span class="line"></span>
+                </button>
+            </div>
+            <div> <!-- เพิ่ม container สำหรับโลโก้ -->
+                <img class="logo2" src="./assets/Logo MildTutor.png">
+            </div>
+            <ul class="menu">
+                <li><a href="#" style="color: #565656 !important">หน้าหลัก</a></li>
+                <li><a href="#" class="nav-link">คอร์สเรียน</a></li>
+                <li><a href="#" class="nav-link">รวมคนเก่ง</a></li>
+                <li><a href="#" class="nav-link">รู้จักอาจารย์</a></li>
+                <li class="button-apply"><a href="#">สมัครคอร์สเรียน</a></li>
+                <li class="button-register"><a href="#">ลงทะเบียน</a></li>
+            </ul>
+        </div>
+        <div class="sidebar-overlay" [class.open]="isSidebarOpen" (click)="toggleMenu()"></div>
+        
+    </mat-sidenav-content>
+</mat-sidenav-container>
